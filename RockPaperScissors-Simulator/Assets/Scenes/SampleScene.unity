@@ -996,10 +996,9 @@ GameObject:
   - component: {fileID: 3863904184453594365}
   - component: {fileID: 8698097132549336977}
   - component: {fileID: 7313246388649794334}
-  - component: {fileID: 5341960945027130845}
-  - component: {fileID: 1358756456733699973}
   - component: {fileID: 8698097132549336978}
   - component: {fileID: 8698097132549336979}
+  - component: {fileID: 8698097132549336980}
   m_Layer: 0
   m_Name: scissors (1)
   m_TagString: scissors
@@ -1007,32 +1006,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &1358756456733699973
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631248377739576837}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.17479718}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.24, y: 10.24}
-    newSize: {x: 10.24, y: 10.24}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 10.24, y: 2.7908924}
-  m_EdgeRadius: 0
 --- !u!50 &1417283325632731010
 Rigidbody2D:
   serializedVersion: 4
@@ -1062,8 +1035,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5008652677727445955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.97, y: 2.49, z: 0}
-  m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
+  m_LocalPosition: {x: 4.06, y: 2.18, z: 0}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1330,9 +1303,9 @@ GameObject:
   - component: {fileID: 4860522691528873143}
   - component: {fileID: 371799656189662141}
   - component: {fileID: 1904713291174289330}
-  - component: {fileID: 4552368302999068187}
   - component: {fileID: 4860522691528873144}
   - component: {fileID: 4860522691528873145}
+  - component: {fileID: 4860522691528873146}
   m_Layer: 0
   m_Name: rock (1)
   m_TagString: rock
@@ -1383,41 +1356,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631248377739576837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.71, y: -1.93, z: 0}
-  m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
+  m_LocalPosition: {x: 0.02, y: -3.71, z: 0}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!68 &4552368302999068187
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3494578959868105635}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 4.7147474, y: -4.7999325}
-  - {x: -4.765827, y: -4.8091354}
-  - {x: -4.4279594, y: 0.6914401}
-  - {x: -1.9369049, y: 3.673923}
-  - {x: -0.10088158, y: 4.6171684}
-  - {x: 2.3982887, y: 3.3346224}
-  - {x: 4.341982, y: 0.6515908}
-  - {x: 4.733571, y: -4.713495}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &4682129665140200988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,8 +1391,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3494578959868105635}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.55, y: 0.04, z: 0}
-  m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
+  m_LocalPosition: {x: -3.59, y: 2.04, z: 0}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1476,7 +1421,7 @@ MonoBehaviour:
   rock: rock
   paper: paper
   scissors: scissors
-  speed: 0.8
+  speed: 0.6
   paperSoldier: 0
   rockSoldier: 0
   scissorsSoldier: 0
@@ -1577,6 +1522,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!70 &4860522691528873146
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3494578959868105635}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 8.29542, y: 10.363792}
+  m_Direction: 0
 --- !u!1 &5008652677727445955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1588,9 +1549,9 @@ GameObject:
   - component: {fileID: 1602103425795385662}
   - component: {fileID: 2126782410608958301}
   - component: {fileID: 1417283325632731010}
-  - component: {fileID: 5622688553131613101}
   - component: {fileID: 5622688553131613102}
   - component: {fileID: 5622688553131613103}
+  - component: {fileID: 5622688553131613104}
   m_Layer: 0
   m_Name: paper (1)
   m_TagString: paper
@@ -1598,48 +1559,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &5341960945027130845
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631248377739576837}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.010324478, y: 0.8363389}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.24, y: 10.24}
-    newSize: {x: 10.24, y: 10.24}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3.982954, y: 8.402124}
-  m_EdgeRadius: 0
---- !u!70 &5622688553131613101
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5008652677727445955}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.053303238, y: 0}
-  m_Size: {x: 5.335879, y: 10.24}
-  m_Direction: 0
 --- !u!114 &5622688553131613102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1663,7 +1582,7 @@ MonoBehaviour:
   rock: rock
   paper: paper
   scissors: scissors
-  speed: 0.8
+  speed: 0.6
   paperSoldier: 0
   rockSoldier: 0
   scissorsSoldier: 0
@@ -1764,6 +1683,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!70 &5622688553131613104
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5008652677727445955}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 8.29542, y: 10.363792}
+  m_Direction: 0
 --- !u!4 &6093933529173784387
 Transform:
   m_ObjectHideFlags: 0
@@ -2293,7 +2228,7 @@ MonoBehaviour:
   rock: rock
   paper: paper
   scissors: scissors
-  speed: 0.8
+  speed: 0.6
   paperSoldier: 0
   rockSoldier: 0
   scissorsSoldier: 0
@@ -2394,3 +2329,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!70 &8698097132549336980
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631248377739576837}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 8.29542, y: 10.363792}
+  m_Direction: 0

@@ -139,7 +139,7 @@ public class SoldierCreate : MonoBehaviour
             {
                 for (int i = 1; i < rockSoldier; i++)
                 {
-                    Instantiate(RockGm, new Vector2(Random.Range(-7f, 7f), Random.Range(-4f, 3.6f)), Quaternion.identity);
+                    Instantiate(RockGm, new Vector2(Random.Range(-8.0f, 8.0f), Random.Range(-5.1f, 4.6f)), Quaternion.identity);
                 }
             }
 
@@ -147,7 +147,7 @@ public class SoldierCreate : MonoBehaviour
             {
                 for (int i = 1; i < paperSoldier; i++)
                 {
-                    Instantiate(PaperGm,new Vector2(Random.Range(-7f,7f), Random.Range(-4f, 3.6f)), Quaternion.identity);
+                    Instantiate(PaperGm, new Vector2(Random.Range(-8.0f, 8.0f), Random.Range(-5.1f, 4.6f)), Quaternion.identity);
                 }
             }
 
@@ -155,7 +155,7 @@ public class SoldierCreate : MonoBehaviour
             {
                 for (int i = 1; i < scissorsSoldier; i++)
                 {
-                    Instantiate(ScissorsGm, new Vector2(Random.Range(-7f, 7f), Random.Range(-4f, 3.6f)), Quaternion.identity);
+                    Instantiate(ScissorsGm, new Vector2(Random.Range(-8.0f, 8.0f), Random.Range(-5.1f, 4.6f)), Quaternion.identity);
                 }
             }
         }
