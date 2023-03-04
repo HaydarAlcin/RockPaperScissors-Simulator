@@ -5,13 +5,16 @@ using UnityEngine;
 
 public class SoldierCreate : MonoBehaviour
 {
+    //Tum tas,kagit,makas seslerinin tutuldugu ses dizisi
     public AudioClip[] sounds;
 
+    //Prefabs olan gamemanager objesi ve oyunun basinda olusturdugumuz tas kagit makas objeleri
     public GameObject gm,RockGm,PaperGm,ScissorsGm;
 
 
-
+    //Tag leri string olarak tuttugumuz degiskenler
     public string rock, paper, scissors;
+
 
     public float speed, paperSoldier, rockSoldier, scissorsSoldier;
 
@@ -19,6 +22,7 @@ public class SoldierCreate : MonoBehaviour
 
     private void Start()
     {
+        
         oneMore = true;
 
         paperSoldier = gm.GetComponent<MenuManager>().paperSoldier;
@@ -26,70 +30,11 @@ public class SoldierCreate : MonoBehaviour
         scissorsSoldier = gm.GetComponent<MenuManager>().scissorsSoldier;
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         SoldierCreater();
-
-        if (this.gameObject.tag == paper)
-        {
-            if (GameObject.FindGameObjectsWithTag(rock).Length > 0)
-            {
-                //tag'e sahip olan tüm nesneleri al
-                GameObject[] paper = GameObject.FindGameObjectsWithTag(rock);
-
-                //nesneleri uzaklýklarýna göre sýrala
-                GameObject closestRock = paper.OrderBy(obj => Vector2.Distance(transform.position, obj.GetComponent<Transform>().position)).FirstOrDefault();
-
-
-                //Targettan kendi pozisyonumuza bir lerp vectorü
-                Vector2 newPosition = Vector2.MoveTowards(transform.position, closestRock.transform.position, speed * Time.deltaTime);
-                // player nesnesini yeni pozisyona taþý
-                transform.position = newPosition;
-            }
-
-
-        }
-
-        else if (this.gameObject.tag == rock)
-        {
-            if (GameObject.FindGameObjectsWithTag(scissors).Length > 0)
-            {
-                // tag'e sahip olan tüm nesneleri al
-                GameObject[] rock = GameObject.FindGameObjectsWithTag(scissors);
-
-                // nesneleri uzaklýklarýna göre sýrala
-                GameObject closestScissors = rock.OrderBy(obj => Vector2.Distance(transform.position, obj.GetComponent<Transform>().position)).FirstOrDefault();
-
-
-                //Targettan kendi pozisyonumuza bir lerp vectorü
-                Vector2 newPosition = Vector2.MoveTowards(transform.position, closestScissors.transform.position, speed * Time.deltaTime);
-                // player nesnesini yeni pozisyona taþý
-                transform.position = newPosition;
-            }
-
-
-        }
-
-        else if (this.gameObject.tag == scissors)
-        {
-            if (GameObject.FindGameObjectsWithTag(paper).Length > 0)
-            {
-                // tag'e sahip olan tüm nesneleri al
-                GameObject[] scissors = GameObject.FindGameObjectsWithTag(paper);
-
-                // nesneleri uzaklýklarýna göre sýrala
-                GameObject closestPaper = scissors.OrderBy(obj => Vector2.Distance(transform.position, obj.GetComponent<Transform>().position)).FirstOrDefault();
-
-
-                //Targettan kendi pozisyonumuza bir lerp vectorü
-                Vector2 newPosition = Vector2.MoveTowards(transform.position, closestPaper.transform.position, speed * Time.deltaTime);
-                // player nesnesini yeni pozisyona taþý
-                transform.position = newPosition;
-            }
-
-
-        }
+        Move();  
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -213,6 +158,70 @@ public class SoldierCreate : MonoBehaviour
                     Instantiate(ScissorsGm, new Vector2(Random.Range(-7f, 7f), Random.Range(-4f, 3.6f)), Quaternion.identity);
                 }
             }
+        }
+    }
+
+    //Hareket Fonksiyonu
+    public void Move()
+    {
+        if (this.gameObject.tag == paper)
+        {
+            if (GameObject.FindGameObjectsWithTag(rock).Length > 0)
+            {
+                //tag'e sahip olan tum nesneleri al
+                GameObject[] paper = GameObject.FindGameObjectsWithTag(rock);
+
+                //nesneleri uzakliklarina göre sýrala
+                GameObject closestRock = paper.OrderBy(obj => Vector2.Distance(transform.position, obj.GetComponent<Transform>().position)).FirstOrDefault();
+
+
+                //Targetta dogru sabit hareket etmek icin lerp yerine movetowards kullaniyoruz
+                Vector2 newPosition = Vector2.MoveTowards(transform.position, closestRock.transform.position, speed * Time.deltaTime);
+                // player nesnesini yeni pozisyona tasi
+                transform.position = newPosition;
+            }
+
+
+        }
+
+        else if (this.gameObject.tag == rock)
+        {
+            if (GameObject.FindGameObjectsWithTag(scissors).Length > 0)
+            {
+                //tag'e sahip olan tum nesneleri al
+                GameObject[] rock = GameObject.FindGameObjectsWithTag(scissors);
+
+                //nesneleri uzakliklarina göre sýrala
+                GameObject closestScissors = rock.OrderBy(obj => Vector2.Distance(transform.position, obj.GetComponent<Transform>().position)).FirstOrDefault();
+
+
+                //Targetta dogru sabit hareket etmek icin lerp yerine movetowards kullaniyoruz
+                Vector2 newPosition = Vector2.MoveTowards(transform.position, closestScissors.transform.position, speed * Time.deltaTime);
+                // player nesnesini yeni pozisyona tasi
+                transform.position = newPosition;
+            }
+
+
+        }
+
+        else if (this.gameObject.tag == scissors)
+        {
+            if (GameObject.FindGameObjectsWithTag(paper).Length > 0)
+            {
+                //tag'e sahip olan tum nesneleri al
+                GameObject[] scissors = GameObject.FindGameObjectsWithTag(paper);
+
+                //nesneleri uzakliklarina göre sýrala
+                GameObject closestPaper = scissors.OrderBy(obj => Vector2.Distance(transform.position, obj.GetComponent<Transform>().position)).FirstOrDefault();
+
+
+                //Targetta dogru sabit hareket etmek icin lerp yerine movetowards kullaniyoruz
+                Vector2 newPosition = Vector2.MoveTowards(transform.position, closestPaper.transform.position, speed * Time.deltaTime);
+                // player nesnesini yeni pozisyona tasi
+                transform.position = newPosition;
+            }
+
+
         }
     }
 }

@@ -16,50 +16,53 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         panel.SetActive(false);
+        gm.GetComponent<MenuManager>().rockSoldier = rockSoldier;
+        gm.GetComponent<MenuManager>().paperSoldier = paperSoldier;
+        gm.GetComponent<MenuManager>().scissorsSoldier = scissorsSoldier;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        gm.GetComponent<MenuManager>().scissorsSoldier = gameObject.GetComponent<GameManager>().scissorsSoldier;
-        gm.GetComponent<MenuManager>().paperSoldier = gameObject.GetComponent<GameManager>().paperSoldier;
-        gm.GetComponent<MenuManager>().rockSoldier = gameObject.GetComponent<GameManager>().rockSoldier;
-    }
+    
 
 
     public void RockSoldierUpBtn()
     {
         rockSoldier++;
-        rockText.text = rockSoldier.ToString();  
+        rockText.text = rockSoldier.ToString();
+        gm.GetComponent<MenuManager>().rockSoldier = rockSoldier;
     }
 
     public void RockSoldierDownBtn()
     {
         rockSoldier--;
         rockText.text = rockSoldier.ToString();
+        gm.GetComponent<MenuManager>().rockSoldier = rockSoldier;
 
         if (rockSoldier == 0)
         {
             rockSoldier = 1;
             rockText.text = rockSoldier.ToString();
+            gm.GetComponent<MenuManager>().rockSoldier = rockSoldier;
         }
     }
 
     public void PaperSoldierUpBtn()
     {
         paperSoldier++;
-        paperText.text = paperSoldier.ToString(); 
+        paperText.text = paperSoldier.ToString();
+        gm.GetComponent<MenuManager>().paperSoldier = paperSoldier;
     }
 
     public void PaperSoldierDownBtn()
     {
         paperSoldier--;
         paperText.text = paperSoldier.ToString();
+        gm.GetComponent<MenuManager>().paperSoldier = paperSoldier;
 
         if (paperSoldier == 0)
         {
             paperSoldier = 1;
             paperText.text = paperSoldier.ToString();
+            gm.GetComponent<MenuManager>().paperSoldier = paperSoldier;
         }
     }
 
@@ -67,17 +70,20 @@ public class GameManager : MonoBehaviour
     {
         scissorsSoldier++;
         scissorText.text = scissorsSoldier.ToString();
+        gm.GetComponent<MenuManager>().scissorsSoldier = scissorsSoldier;
     }
 
     public void ScissorsSoldierDownBtn()
     {
         scissorsSoldier--;
         scissorText.text = scissorsSoldier.ToString();
+        gm.GetComponent<MenuManager>().scissorsSoldier = scissorsSoldier;
 
         if (scissorsSoldier == 0)
         {
             scissorsSoldier = 1;
             scissorText.text = scissorsSoldier.ToString();
+            gm.GetComponent<MenuManager>().scissorsSoldier = scissorsSoldier;
         }
     }
 
