@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3742898873746974365}
   - component: {fileID: 8479606032163938711}
-  - component: {fileID: 7216531559343235666}
-  - component: {fileID: -2306370730879480036}
   - component: {fileID: 7704427194461760920}
+  - component: {fileID: -4324499594273502786}
+  - component: {fileID: 5739903459686738993}
+  - component: {fileID: -7764187530444545259}
   m_Layer: 0
   m_Name: rock
   m_TagString: rock
@@ -87,114 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &7216531559343235666
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4682129665271669129}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 9.51, y: 9.59}
-    newSize: {x: 9.51, y: 9.59}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 4.145, y: -2.5249999}
-      - {x: 2.895, y: -2.345}
-      - {x: 2.5249999, y: -1.555}
-      - {x: 2.0349998, y: -1.295}
-      - {x: 2.205, y: 0.36499998}
-      - {x: 2.865, y: 0.375}
-      - {x: 2.835, y: -1.665}
-      - {x: 3.095, y: -1.9749999}
-      - {x: 3.925, y: -1.935}
-      - {x: 4.165, y: -1.7149999}
-      - {x: 4.4449997, y: -1.135}
-      - {x: 4.415, y: 0.705}
-      - {x: 4.015, y: 1.7249999}
-      - {x: 2.985, y: 2.345}
-      - {x: 2.455, y: 2.2849998}
-      - {x: 2.455, y: 3.185}
-      - {x: 2.435, y: 3.205}
-      - {x: 2.185, y: 3.5249999}
-      - {x: 2.165, y: 3.5449998}
-      - {x: 1.9649999, y: 3.8249998}
-      - {x: 0.815, y: 4.395}
-      - {x: 0.265, y: 4.645}
-      - {x: -0.385, y: 4.645}
-      - {x: -0.405, y: 4.625}
-      - {x: -0.92499995, y: 4.3849998}
-      - {x: -0.945, y: 4.365}
-      - {x: -1.235, y: 4.105}
-      - {x: -1.255, y: 4.085}
-      - {x: -2.0049999, y: 3.8249998}
-      - {x: -2.2649999, y: 3.5249999}
-      - {x: -2.5249999, y: 3.175}
-      - {x: -3.245, y: 1.905}
-      - {x: -3.995, y: 1.665}
-      - {x: -3.995, y: 1.375}
-      - {x: -4.525, y: 0.66499996}
-      - {x: -4.495, y: -1.125}
-      - {x: -4.475, y: -1.145}
-      - {x: -4.225, y: -1.665}
-      - {x: -3.945, y: -1.9449999}
-      - {x: -3.195, y: -1.9449999}
-      - {x: -3.175, y: -1.925}
-      - {x: -2.905, y: -1.685}
-      - {x: -2.675, y: 0.375}
-      - {x: -2.0249999, y: 0.375}
-      - {x: -2.2849998, y: -1.355}
-      - {x: -2.5349998, y: -1.605}
-      - {x: -2.955, y: -2.365}
-      - {x: -4.255, y: -2.455}
-      - {x: -4.755, y: -3.175}
-      - {x: -4.755, y: -4.795}
-      - {x: 4.755, y: -4.795}
-      - {x: 4.755, y: -3.235}
-      - {x: 4.535, y: -2.7649999}
-    - - {x: -4.4249997, y: -3.345}
-      - {x: -4.235, y: -3.345}
-      - {x: -4.235, y: -3.495}
-      - {x: -4.4249997, y: -3.495}
-    - - {x: -0.345, y: -1.645}
-      - {x: -0.375, y: -1.615}
-      - {x: -0.575, y: -1.615}
-      - {x: -0.575, y: -0.645}
-      - {x: 0.475, y: -0.645}
-      - {x: 0.475, y: -1.615}
-      - {x: 0.24499999, y: -1.5749999}
-      - {x: 0.235, y: -1.645}
-      - {x: 0.205, y: -1.8449999}
-      - {x: -0.345, y: -1.875}
---- !u!114 &-2306370730879480036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4682129665271669129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c131a4c3970186408cd79e5a946ce0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rock: rock
-  paper: paper
-  scissors: scissors
-  speed: 1
 --- !u!50 &7704427194461760920
 Rigidbody2D:
   serializedVersion: 4
@@ -216,3 +109,147 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &-4324499594273502786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4682129665271669129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af047ecce530db4f8f3f39c4e7f7548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - {fileID: 8300000, guid: ce463685d96984b44bc24f46565bb45a, type: 3}
+  - {fileID: 8300000, guid: ec0010642bea52942804039f19d5dd25, type: 3}
+  - {fileID: 8300000, guid: dc8203e142f329f4295e85c02fb5c31a, type: 3}
+  rock: rock
+  paper: paper
+  scissors: scissors
+  speed: 0.8
+--- !u!68 &5739903459686738993
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4682129665271669129}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 4.7147474, y: -4.7999325}
+  - {x: -4.765827, y: -4.8091354}
+  - {x: -4.4279594, y: 0.6914401}
+  - {x: -1.9369049, y: 3.673923}
+  - {x: -0.10088158, y: 4.6171684}
+  - {x: 2.3982887, y: 3.3346224}
+  - {x: 4.341982, y: 0.6515908}
+  - {x: 4.733571, y: -4.713495}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!82 &-7764187530444545259
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4682129665271669129}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 1
+  BypassListenerEffects: 1
+  BypassReverbZones: 1
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
