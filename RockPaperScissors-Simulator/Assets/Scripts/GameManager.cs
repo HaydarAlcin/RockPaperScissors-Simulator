@@ -10,15 +10,19 @@ public class GameManager : MonoBehaviour
     public GameObject panel;
 
     public float paperSoldier, rockSoldier, scissorsSoldier;
+    
+    public MenuManager menuManager;
 
     public Text paperText,rockText,scissorText;
 
     private void Start()
     {
+        menuManager = gm.GetComponent<MenuManager>();
+
         panel.SetActive(false);
-        gm.GetComponent<MenuManager>().rockSoldier = rockSoldier;
-        gm.GetComponent<MenuManager>().paperSoldier = paperSoldier;
-        gm.GetComponent<MenuManager>().scissorsSoldier = scissorsSoldier;
+        menuManager.rockSoldier = rockSoldier;
+        menuManager.paperSoldier = paperSoldier;
+        menuManager.scissorsSoldier = scissorsSoldier;
     }
 
     

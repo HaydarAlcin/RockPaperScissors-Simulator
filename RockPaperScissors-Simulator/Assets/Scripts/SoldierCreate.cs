@@ -11,6 +11,7 @@ public class SoldierCreate : MonoBehaviour
     //Prefabs olan gamemanager objesi ve oyunun basinda olusturdugumuz tas kagit makas objeleri
     public GameObject gm,RockGm,PaperGm,ScissorsGm;
 
+    public MenuManager menuManager;
 
     //Tag leri string olarak tuttugumuz degiskenler
     public string rock, paper, scissors;
@@ -22,12 +23,13 @@ public class SoldierCreate : MonoBehaviour
 
     private void Start()
     {
+        menuManager = gm.GetComponent<MenuManager>();
         
         oneMore = true;
 
-        paperSoldier = gm.GetComponent<MenuManager>().paperSoldier;
-        rockSoldier = gm.GetComponent<MenuManager>().rockSoldier;
-        scissorsSoldier = gm.GetComponent<MenuManager>().scissorsSoldier;
+        paperSoldier = menuManager.paperSoldier;
+        rockSoldier = menuManager.rockSoldier;
+        scissorsSoldier = menuManager.scissorsSoldier;
     }
 
     
