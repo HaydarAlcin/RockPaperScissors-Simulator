@@ -39,53 +39,6 @@ public class SoldierCreate : MonoBehaviour
         Move();  
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (this.gameObject.tag == paper)
-        {
-            if (collision.tag == rock)
-            {
-                gameObject.GetComponent<AudioSource>().clip = sounds[1];
-                gameObject.GetComponent<AudioSource>().Play();
-                collision.GetComponent<AudioSource>().Stop();
-                collision.GetComponent<SpriteRenderer>().sprite = this.gameObject.GetComponent<SpriteRenderer>().sprite;
-                collision.tag = paper;
-                
-            }
-
-        }
-
-        else if (this.gameObject.tag == rock)
-        {
-            if (collision.tag == scissors)
-            {
-                gameObject.GetComponent<AudioSource>().clip = sounds[2];
-                gameObject.GetComponent<AudioSource>().Play();
-                collision.GetComponent<AudioSource>().Stop();
-                collision.GetComponent<SpriteRenderer>().sprite = this.gameObject.GetComponent<SpriteRenderer>().sprite;
-                collision.tag = rock;
-                
-
-            }
-
-        }
-
-        else if (this.gameObject.tag == scissors)
-        {
-            if (collision.tag == paper)
-            {
-                gameObject.GetComponent<AudioSource>().clip = sounds[0];
-                gameObject.GetComponent<AudioSource>().Play();
-                collision.GetComponent<AudioSource>().Stop();
-                collision.GetComponent<SpriteRenderer>().sprite = this.gameObject.GetComponent<SpriteRenderer>().sprite;
-                collision.tag = scissors;
-             
-
-            }
-
-        }
-    }
-
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (this.gameObject.tag == paper)
