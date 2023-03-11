@@ -1035,7 +1035,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5008652677727445955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.06, y: 2.18, z: 0}
+  m_LocalPosition: {x: -0.01, y: -2.6, z: 0}
   m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1356,7 +1356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 631248377739576837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -3.71, z: 0}
+  m_LocalPosition: {x: 3.49, y: 2.11, z: 0}
   m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1418,6 +1418,7 @@ MonoBehaviour:
   RockGm: {fileID: 4682129665271669129, guid: a78e387c8c6c94e45878e81069273052, type: 3}
   PaperGm: {fileID: 3585237534413030381, guid: c3ec14bff5919f245a2d3eaf22352bd2, type: 3}
   ScissorsGm: {fileID: 7624591067630655939, guid: d0828dae8f24b1144af67334c48660e3, type: 3}
+  menuManager: {fileID: 0}
   rock: rock
   paper: paper
   scissors: scissors
@@ -1579,6 +1580,7 @@ MonoBehaviour:
   RockGm: {fileID: 4682129665271669129, guid: a78e387c8c6c94e45878e81069273052, type: 3}
   PaperGm: {fileID: 3585237534413030381, guid: c3ec14bff5919f245a2d3eaf22352bd2, type: 3}
   ScissorsGm: {fileID: 7624591067630655939, guid: d0828dae8f24b1144af67334c48660e3, type: 3}
+  menuManager: {fileID: 0}
   rock: rock
   paper: paper
   scissors: scissors
@@ -2002,6 +2004,7 @@ MonoBehaviour:
   RockGm: {fileID: 4682129665271669129, guid: a78e387c8c6c94e45878e81069273052, type: 3}
   PaperGm: {fileID: 3585237534413030381, guid: c3ec14bff5919f245a2d3eaf22352bd2, type: 3}
   ScissorsGm: {fileID: 7624591067630655939, guid: d0828dae8f24b1144af67334c48660e3, type: 3}
+  menuManager: {fileID: 0}
   rock: rock
   paper: paper
   scissors: scissors
@@ -2047,6 +2050,7 @@ MonoBehaviour:
   RockGm: {fileID: 4682129665271669129, guid: a78e387c8c6c94e45878e81069273052, type: 3}
   PaperGm: {fileID: 3585237534413030381, guid: c3ec14bff5919f245a2d3eaf22352bd2, type: 3}
   ScissorsGm: {fileID: 7624591067630655939, guid: d0828dae8f24b1144af67334c48660e3, type: 3}
+  menuManager: {fileID: 0}
   rock: rock
   paper: paper
   scissors: scissors
@@ -2145,6 +2149,7 @@ MonoBehaviour:
   RockGm: {fileID: 4682129665271669129, guid: a78e387c8c6c94e45878e81069273052, type: 3}
   PaperGm: {fileID: 3585237534413030381, guid: c3ec14bff5919f245a2d3eaf22352bd2, type: 3}
   ScissorsGm: {fileID: 7624591067630655939, guid: d0828dae8f24b1144af67334c48660e3, type: 3}
+  menuManager: {fileID: 0}
   rock: rock
   paper: paper
   scissors: scissors
@@ -2225,6 +2230,7 @@ MonoBehaviour:
   RockGm: {fileID: 4682129665271669129, guid: a78e387c8c6c94e45878e81069273052, type: 3}
   PaperGm: {fileID: 3585237534413030381, guid: c3ec14bff5919f245a2d3eaf22352bd2, type: 3}
   ScissorsGm: {fileID: 7624591067630655939, guid: d0828dae8f24b1144af67334c48660e3, type: 3}
+  menuManager: {fileID: 0}
   rock: rock
   paper: paper
   scissors: scissors
